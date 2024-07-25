@@ -11,11 +11,12 @@
     <p>Criar uma função que multiplica dois números e 
     retorna o resultado para uma variável.</p>
     <p>Uma função pode ser armazenada em uma variável:</p>
+    <p><b>Versão 2:</b> A variável vira uma função.</p>
     <p id="demo" style="font-weight: bold;"></p>
 
     <script>
         const x = function (a, b) {return a * b};
-        document.getElementById("demo").innerHTML = x;
+        document.getElementById("demo").innerHTML = x(5,6);
     </script>
 </body>
 </html>
