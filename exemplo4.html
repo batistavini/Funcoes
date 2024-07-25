@@ -3,24 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 3</title>
+    <title>Exemplo 4</title>
 </head>
 <body>
-    <h1> Exemplo 3</h1>
+    <h1> Exemplo 4</h1>
     <h2>Funções</h2>
     <p>Criar uma função que multiplica dois números e 
     retorna o resultado para uma variável.
     Uma função pode ser armazenada em uma variável </p>
-    <p>Funções podem ser usadas como valores ou expressões.</p>
+    <p>Utilizando <b>Arrow Functions.</b></p>
     <p id="resultado" style="font-weight: bold;"></p>
 
     <script>
-        function multiplica(a, b) 
-        {
-            return a * b;
-        }
-        let x = multiplica(5,4) * 2;
-        document.getElementById("resultado").innerHTML = x;
+        const x = (a, b) => a*b;
+        document.getElementById("resultado").innerHTML = x(5,5);
     </script>
 </body>
 </html>
