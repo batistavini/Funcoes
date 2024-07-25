@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 5</title>
+</head>
+<body>
+    <h1> Exemplo 5</h1>
+    <h2>Funções</h2>
+    <p>Criar uma função que multiplica dois números e 
+    retorna o resultado para uma variável.
+    Uma função pode ser armazenada em uma variável </p>
+    <p>Utilizando <b>Parâmetros Padrão.</b></p>
+    <p id="resultado" style="font-weight: bold;"></p>
+
+    <script>
+        function multiplica(a, b){
+        if(b===undefined)
+        {
+            b= 1;
+        }
+
+        return a*b;
+    }
+    document.getElementById("resultado").innerHTML = multiplica(5);
+    </script>
+</body>
+</html>
