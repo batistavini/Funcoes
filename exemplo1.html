@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo 1</title>
 </head>
-    <body style="font-size: x-large;">
-        <h1>Exemplo 1</h1>
-        <h2>Funções</h2>
-        <p>Criar uma função que multiplica dois números
-            e retorna o resultado para uma variável.</p>
-        <p>Insira o primeiro valor</p>
-        <input id="n1">
-        <p>Insira o segundo valor</p>
-        <input id="n2">
-        <button onclick="multiplica">Multiplicar</button>
-        <script>
-            var n1 = getElementById("n1").innerHTML =n1 
-            let x = multiplica(n1,n2);
-            var n2 = getElementById("n2").innerHTML= n2
-            function multiplica (x, y){
-                return x;
-            }
-        </script>
-        </body>
+<body style="font-size: x-large;">
+<h1>Exemplo 1</h1>
+<h2>Funções</h2>
+<p>Criar uma função que multiplica dois números e retorna o resultado para uma variável.</p>
+<p><b>Versão 2:</b> O usuário vai digitar dois valores em caixas input, clicar no botão calcular e mostrar o resultado.</p>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<button onclick="calcular();">Calcular</button>
+<p id="resultado" style="font-weight: bold;"></p>
+
+<script>
+    function calcular(){
+        let n1 = document.getElementById("num1").value;
+        let n2 = document.getElementById("num2").value;
+        let x = multiplica(n1, n2);
+        document.getElementById("resultado").innerHTML = x;
+    }
+    function multiplica (a, b){
+        return a*b;
+    }
+</script>
+</body>
 </html>
