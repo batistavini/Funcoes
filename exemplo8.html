@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo 8</title>
+</head>
+<body style="font-size: x-large;">
+    <h1>Exemplo 8</h1>
+    <h2>Funções</h2>
+   
+    <p><b>Função para somar qualquer quantidade de números.</b></p>
+    <p id="resultado" style="font-weight: bold;"></p>
+
+    <script>
+      function sumAll(...args){
+            let sum = 0;
+            for (let i=0;i<args.length;i++) {
+                  sum += args[i];
+
+               }           
+                        return sum;
+        }
+
+        document.getElementById("resultado").innerHTML= sumAll(5,13,9,5,60,8,7);
+        
+    </script>
+    
+</body>

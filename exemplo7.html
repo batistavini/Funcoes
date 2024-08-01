@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 7</title>
+</head>
+<body style="font-size: x-large;">
+    <h1>Exemplo 7</h1>
+    <h2>Funções</h2>
+    <p><b>Função para encontrar o maior número.</b></p>
+    <p id="resultado" style="font-weight: bold;"></p>
+<script>
+    function findMax(...args){
+        let max = -Infinity;
+        for (let i=0;i<args.length;i++) {
+        if (args[i]>max){
+            max = args[i];
+        }
+    }
+    return max;
+}
+   document.getElementById("resultado").innerHTML = indMax (5,13,9,5,60,8,7);
+
+</script>
+</body>
+</html>
